@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Face</title>
+
+    <style>
+
+.container {
+  background: black;
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 105px;
+  
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(18,50px);
+  grid-template-rows: repeat(1, 50px);
+  grid-gap: 1px;
+  
+  
+}
+.cell1 {
+    color: transparent;
+   background: red;
+   animation-name: example1;
+   animation-duration: 20s;
+  animation-iteration-count: infinite; 
+
+}
+@keyframes example1 {
+    0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightblue;}
+  75% {background-color: black;}
+  100% {background-color: red;}
+}
+.cell2 {
+    color: transparent;
+   background: yellow;
+   animation-name: example2;
+   animation-duration: 20s;
+  animation-iteration-count: infinite; 
+
+}
+@keyframes example2 {
+    0%    {background-color: yellow;}
+    25%   {background-color: red;}   
+    50%  {background-color: lightblue;}
+    75% {background-color: black;}
+  100% {background-color: yellow;}
+}
+.cell3 {
+    color: transparent;
+   background: blue;
+   animation-name: example3;
+   animation-duration: 20s;
+  animation-iteration-count: infinite; 
+}
+@keyframes example3 {
+    0%   {background-color: blue;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightblue;}
+  75% {background-color: black;}
+  100% {background-color: blue;}
+}
+.cell4 {
+    color: transparent;
+   background: green;
+   animation-name: example4;
+   animation-duration: 20s;
+  animation-iteration-count: infinite; 
+
+}
+@keyframes example4 {
+    0%   {background-color: green;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightblue;}
+  75% {background-color: black;}
+  100% {background-color: green;}
+}
+.cell5 {
+    color: transparent;
+   background: black;
+   animation-name: example5;
+   animation-duration: 20s;
+  animation-iteration-count: infinite; 
+
+}
+@keyframes example5 {
+    0%   {background-color: black;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightblue;}
+  75% {background-color: black;}
+  100% {background-color: black;}
+}
+.cell7 {
+    color: transparent;
+   background: black;
+   animation-name: example7;
+   animation-duration: 20s;
+  animation-iteration-count: infinite; 
+}
+@keyframes example7 {
+    0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: lightblue;}
+  75% {background-color: black;}
+  100% {background-color: black;}
+  
+}
+/* .cell8 {
+  width: 30px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  animation-name: example8;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+ border-radius: 25px;
+}
+@keyframes example8 {
+  0%   {background-color:white; left:0px; top:0px;}
+  25%  {background-color:white; left:100px; top:0px;}
+  50%  {background-color:red; left:200px; top:90px;}
+  75%  {background-color:red; left:0px; top:90px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.cell9 {
+    width: 30px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  animation-name: example9;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+ border-radius: 25px;
+ animation-direction: reverse;  
+
+}
+@keyframes example9 {
+    0%   {background-color:white; left:0px; top:0px;}
+  25%  {background-color:white; right:100px; top:0px;}
+  50%  {background-color:white; left:200px; top:90px;}
+  75%  {background-color:red; left:0px; top:90px;}
+  100% {background-color:red; left:0px; top:0px;}
+ 
+  
+} */
+/* .cell1, .cell2, .cell3, .cell4, .cell5, .cell6{
+    width: 30px;
+  height: 20px;
+  /* background-color: white; */
+  /* position: relative; */
+  /* animation-name: example3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; */
+ /* border-radius: 25px; */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+            <div class="cell7" id="1"style = "background-color: white;">yellow</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+            <div class="cell5" id="1">black</div>
+        </div>
+      </div>
+
+    
+    <div class="container">
+        <div class="grid">
+            <div class="cell1" id="1">Believ</div>
+            <div class="cell1" id="1">e_in</div>
+            <div class="cell1" id="1">your</div>
+            <div class="cell1" id="1">self</div>
+            <div class="cell1" id="1">___</div>
+            <div class="cell1" id="1">___</div>
+            <div class="cell1" id="1">Believ</div>
+            <div class="cell1" id="1">e_in</div>
+            <div class="cell1" id="1">your</div>
+            <div class="cell1" id="1">self</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+        </div>
+      </div>
+      <!-- //Eyes -->
+      <div class="container">
+        <div class="grid">
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yell</div>
+            <div class="cell8" id="1"style = "background-color: black;"></div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yell</div>
+            <div class="cell9" id="1"style = "background-color: black;"></div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+            <div class="cell2" id="1">yellow</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+            <div class="cell4" id="1">green</div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="grid">
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+            <div class="cell3" id="1">blue</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell5" id="1"style = "background-color: black;">yellow</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+            <div class="cell1" id="1">red</div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="grid">
+          <div class="cell" id="1">1</div>
+          <div class="cell" id="2">2</div>
+          <div class="cell" id="3">3</div>
+          <div class="cell" id="4">4</div>
+          <div class="cell" id="5">5</div>
+          <div class="cell" id="6">6</div>
+          <div class="cell" id="7">7</div>
+          <div class="cell" id="8">8</div>
+          <div class="cell" id="9">9</div>
+          <div class="cell" id="1">1</div>
+          <div class="cell" id="2">2</div>
+          <div class="cell" id="3">3</div>
+          <div class="cell" id="4">4</div>
+          <div class="cell" id="5">5</div>
+          <div class="cell" id="6">6</div>
+          <div class="cell" id="7">7</div>
+          <div class="cell" id="8">8</div>
+          <div class="cell" id="9">9</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <div class="cell" id="1">1</div>
+          <div class="cell" id="2">2</div>
+          <div class="cell" id="3">3</div>
+          <div class="cell" id="4">4</div>
+          <div class="cell" id="5">5</div>
+          <div class="cell" id="6">6</div>
+          <div class="cell" id="7">7</div>
+          <div class="cell" id="8">8</div>
+          <div class="cell" id="9">9</div>
+          <div class="cell" id="1">1</div>
+          <div class="cell" id="2">2</div>
+          <div class="cell" id="3">3</div>
+          <div class="cell" id="4">4</div>
+          <div class="cell" id="5">5</div>
+          <div class="cell" id="6">6</div>
+          <div class="cell" id="7">7</div>
+          <div class="cell" id="8">8</div>
+          <div class="cell" id="9">9</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <div class="cell" id="1">1</div>
+          <div class="cell" id="2">2</div>
+          <div class="cell" id="3">3</div>
+          <div class="cell" id="4">4</div>
+          <div class="cell" id="5">5</div>
+          <div class="cell" id="6">6</div>
+          <div class="cell" id="7">7</div>
+          <div class="cell" id="8">8</div>
+          <div class="cell" id="9">9</div>
+          <div class="cell" id="1">1</div>
+          <div class="cell" id="2">2</div>
+          <div class="cell" id="3">3</div>
+          <div class="cell" id="4">4</div>
+          <div class="cell" id="5">5</div>
+          <div class="cell" id="6">6</div>
+          <div class="cell" id="7">7</div>
+          <div class="cell" id="8">8</div>
+          <div class="cell" id="9">9</div>
+        </div>
+      </div>
+</body>
+</html>
